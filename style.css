@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* class container */
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+/* class top */
+.top{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    justify-content: space-between;
+}
+
+/* class menu */
+.menu{
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    height: 4rem;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5rem;
+}
+
+/* class menu_tap */
+.menu_tap{
+    width: 50%;
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(6 , 1fr);
+    align-items: center;
+    justify-items: center;
+
+}
+
+/* class menu_tap --> p */
+.menu_tap p{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* class menu_tap --> p เมื่อเมาส์วางที่ p */
+.menu_tap p:hover{
+    background-color: #007ef3;
+    transition-duration: 0.5s;
+}
+
+/* class fa-phone */
+.fa-phone{
+    color: white;
+}
+
+/* class icon_c */
+.icon_c{
+    padding: 0.5rem;
+    background-color: #007ef3;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* class contact */
+.contact{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 15rem;
+    justify-content: space-around;
+}
+
+/* class btn_menu_slide */
+.btn_menu_slide{
+    height: 100%;
+    align-items: center;
+    padding: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+/* class fa-reorder */
+.fa-reorder{
+    color: white;
+    display: none;
+}
+
+/* class background */
+.background{
+    background-color: rgba(0, 0, 0, 0.842);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+/* class slide */
+.slide{
+    width: 20rem;
+    height: 100%;
+    background-color: rgb(32, 32, 32);
+    position: absolute;
+    color: white;
+    z-index: 1;
+    left: -20%;
+}
+
+/* class menu_tap_slide */
+.menu_tap_slide{
+    width: 100%;
+    padding: 3rem 0rem 3rem 0rem;
+    text-align: center;
+}
+
+/* menu_tap_slide --> p */
+.menu_tap_slide p{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* menu_tap_slide --> p เมื่อเมาส์วางที่ p */
+.menu_tap_slide p:hover{
+    background-color: #007ef3;
+    transition-duration: 0.5s;
+}
+
+/* เมื่อขนาดหน้าจอน้อยว่า 1330px ให้ทำดังต่อไปนี้ */
+@media only screen and (max-width : 1330px) {
+    
+    .menu{
+        justify-content: space-between;
+    }
+
+    .menu_tap{
+        display: none;
+    }
+
+    .btn_menu_slide{
+        display: flex;
+    }
+}
